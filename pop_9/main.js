@@ -1,6 +1,6 @@
 const modal = document.querySelector('.main')
 const openBtn = document.querySelector('.open-btn')
-const closeBtn = document.querySelector('.cancel')
+// const closeBtn = document.querySelector('.cancel')
 const oferley = document.querySelector('.overflow')
 const yesst = document.querySelector('.yes')
 const nost = document.querySelector('.no')
@@ -16,10 +16,6 @@ const openPup = () =>{
 const closePup = () =>{
     modal.classList.add('hidden')
     oferley.classList.add('hidden')
-    nost.classList.add('no1')
-    yesst.classList.add('yes1')
-
-
 }
 const yesbt = () =>{
     yesst.classList.remove('yes1')
@@ -42,7 +38,7 @@ const name1 =()=>{
 }
 
 openBtn.addEventListener('click',openPup)
-closeBtn.addEventListener('click',closePup)
+// closeBtn.addEventListener('click',closePup)
 oferley.addEventListener('click',closePup)
 savebt.addEventListener('click',yesbt)
 notst.addEventListener('click',nobt)

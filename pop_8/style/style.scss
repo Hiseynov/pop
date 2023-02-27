@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    height: 100vh;
+  flex-direction: column;
+}
+.popop {
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+//   animation-direction: alternate;
+  width: 500px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 0px 20px 4px wheat;
+  z-index: 2;
+  h3 {
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(37, 33, 33);
+  }
+}
+.closes {
+  width: 70px;
+  margin: 0 auto;
+
+}
+.close{
+    width: 100%;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: 1px solid blue;
+    margin-top: 20px;
+    height: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+}
+.opens {
+  width: 100px;
+  position: absolute;
+  left: 25px;
+  bottom: 40px;
+ 
+}
+.open{
+    width: 100%;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: 1px solid blue;
+    margin-top: 20px;
+    height: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+@keyframes example {
+  0% {
+    opacity: 0.5;
+    left: 0px;
+    top: -180px;
+  }
+  50% {
+    opacity: 0.7;
+    left: 0px;
+    top: -130px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+ 
+
+}
+@keyframes example_2 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    50% {
+      opacity: 0.6;
+      left: 0px;
+      top: -100px;
+    }
+    100% {
+      opacity: 0;
+      left: 0px;
+      top: -180px;
+
+    }
+   
+  
+  }
+.hidden{
+    display:none ;
+}
+.hid{
+animation-name: example_2;
+animation-duration: 1s;
+opacity: 0;
+}
+.ofervlow{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 177, 114, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
